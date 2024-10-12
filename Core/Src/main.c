@@ -20,6 +20,7 @@
 #include "main.h"
 #include "can.h"
 #include "gpio.h"
+#include "tim.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -44,7 +45,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+CAN_TxHeaderTypeDef can_tx_header = { .StdId = 0x0200,
+                                      .ExtId = 0,
+                                      .IDE = CAN_ID_STD,
+                                      .RTR = CAN_RTR_DATA,
+                                      .DLC = 8,
+                                      .TransmitGlobalTime = DISABLE };
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -86,7 +92,10 @@ int main(void) {
     /* Initialize all configured peripherals */
     MX_GPIO_Init();
     MX_CAN1_Init();
+    MX_TIM1_Init();
     /* USER CODE BEGIN 2 */
+    // TIM1
+    HAL_TIM_Base_Start_IT(&htim1);
     // CAN Rx
     CAN_FilterTypeDef filter_config = { .FilterIdHigh = 0x0000,
                                         .FilterIdLow = 0x0201,
@@ -103,43 +112,12 @@ int main(void) {
     HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
     // CAN Tx
-    uint8_t tx_success = 0;
-    uint8_t can_tx_data[8] = { 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00 };
-    CAN_TxHeaderTypeDef can_tx_header = { .StdId = 0x200,
-                                          .ExtId = 0,
-                                          .IDE = CAN_ID_STD,
-                                          .RTR = CAN_RTR_DATA,
-                                          .DLC = 8,
-                                          .TransmitGlobalTime = DISABLE };
 
-    int toggle_flag = 0;
-    uint32_t tx_mailbox;
-    if (HAL_CAN_AddTxMessage(&hcan1, &can_tx_header, can_tx_data, &tx_mailbox) == HAL_OK) {
-        tx_success = 1;
-    } else {
-        tx_success = 0;
-    }
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1) {
-        //        if (HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin) == GPIO_PIN_SET) {
-        //            while (HAL_GPIO_ReadPin(KEY_GPIO_Port, KEY_Pin) == GPIO_PIN_SET) {
-        //            }
-        //            if (toggle_flag) {
-        //                can_tx_data[3] = 0x00;
-        //                toggle_flag = 0;
-        //            } else {
-        //                can_tx_data[3] = 0x00;
-        //                toggle_flag = 1;
-        //            }
-        //            if (HAL_CAN_AddTxMessage(&hcan1, &can_tx_header, can_tx_data, tx_mailbox) == HAL_OK) {
-        //                tx_success = 1;
-        //            } else {
-        //                tx_success = 0;
-        //            }
-        //        }
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */

@@ -4,6 +4,7 @@
 "can_learning\main.o"
 "can_learning\gpio.o"
 "can_learning\can.o"
+"can_learning\tim.o"
 "can_learning\stm32f4xx_it.o"
 "can_learning\stm32f4xx_hal_msp.o"
 "can_learning\stm32f4xx_hal_can.o"

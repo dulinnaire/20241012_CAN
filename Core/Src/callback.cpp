@@ -1,5 +1,6 @@
 #include "can.h"
 #include "stm32f4xx.h"
+#include "tim.h"
 
 uint8_t can_rx_buff[8];
 CAN_RxHeaderTypeDef can_rx_header;
@@ -46,7 +47,17 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
             }
 
             total_ecd_angle = 360 * round_cnt + ecd_angle;
-
         }
     }
 }
+extern CAN_TxHeaderTypeDef can_tx_header;
+uint32_t tx_mailbox;
+uint8_t can_tx_data[8] = { 0x00, 0x00, 0x00, 0x70, 0x00, 0x00, 0x00, 0x00 };
+int cnt = 0;
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
+    if (htim == &htim1) {
+        HAL_CAN_AddTxMessage(&hcan1, &can_tx_header, can_tx_data, &tx_mailbox);
+        cnt++;
+    }
+}
+
