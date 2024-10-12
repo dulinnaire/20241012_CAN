@@ -24,8 +24,6 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
     if (hcan == &hcan1) {
         // 接收到报文，进行处理
         if (HAL_CAN_GetRxMessage(&hcan1, CAN_RX_FIFO0, &can_rx_header, can_rx_buff) == HAL_OK) {
-            // rotate_speed =
-            //  linear_mapping((can_rx_buff[2] << 8) | can_rx_buff[3], -32768, 32767, -500, 500);
             rotate_speed = (int16_t)((can_rx_buff[2] << 8) | can_rx_buff[3]);
             current = linear_mapping(
                 (int16_t)((can_rx_buff[4] << 8) | can_rx_buff[5]),
@@ -41,15 +39,6 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
                 linear_mapping((uint16_t)((can_rx_buff[0] << 8) | can_rx_buff[1]), 0, 8191, 0, 360);
             delta_ecd_angle = ecd_angle - last_ecd_angle;
 
-            // if (rotate_speed > 0) {
-            //     if (delta_ecd_angle < 0) {
-            //         round_cnt++;
-            //     }
-            // } else if (rotate_speed < 0) {
-            //     if (delta_ecd_angle > 0) {
-            //         round_cnt--;
-            //     }
-            // }
             if (delta_ecd_angle > 180) {
                 round_cnt--;
             } else if (delta_ecd_angle < -180) {
