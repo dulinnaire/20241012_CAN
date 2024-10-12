@@ -1,4 +1,4 @@
-can_learning\main.o: ../Core/Src/main.c
+can_learning\main.o: ..\Core\Src\main.c
 can_learning\main.o: ../Core/Inc/main.h
 can_learning\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 can_learning\main.o: ../Core/Inc/stm32f4xx_hal_conf.h
