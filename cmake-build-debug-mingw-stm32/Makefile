@@ -224,6 +224,54 @@ Core/Src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/main.c.s
 .PHONY : Core/Src/main.c.s
 
+Core/Src/motor.obj: Core/Src/motor.cpp.obj
+.PHONY : Core/Src/motor.obj
+
+# target to build an object file
+Core/Src/motor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/motor.cpp.obj
+.PHONY : Core/Src/motor.cpp.obj
+
+Core/Src/motor.i: Core/Src/motor.cpp.i
+.PHONY : Core/Src/motor.i
+
+# target to preprocess a source file
+Core/Src/motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/motor.cpp.i
+.PHONY : Core/Src/motor.cpp.i
+
+Core/Src/motor.s: Core/Src/motor.cpp.s
+.PHONY : Core/Src/motor.s
+
+# target to generate assembly for a file
+Core/Src/motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/motor.cpp.s
+.PHONY : Core/Src/motor.cpp.s
+
+Core/Src/pid.obj: Core/Src/pid.cpp.obj
+.PHONY : Core/Src/pid.obj
+
+# target to build an object file
+Core/Src/pid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/pid.cpp.obj
+.PHONY : Core/Src/pid.cpp.obj
+
+Core/Src/pid.i: Core/Src/pid.cpp.i
+.PHONY : Core/Src/pid.i
+
+# target to preprocess a source file
+Core/Src/pid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/pid.cpp.i
+.PHONY : Core/Src/pid.cpp.i
+
+Core/Src/pid.s: Core/Src/pid.cpp.s
+.PHONY : Core/Src/pid.s
+
+# target to generate assembly for a file
+Core/Src/pid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/pid.cpp.s
+.PHONY : Core/Src/pid.cpp.s
+
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
 
@@ -343,6 +391,30 @@ Core/Src/system_stm32f4xx.s: Core/Src/system_stm32f4xx.c.s
 Core/Src/system_stm32f4xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/system_stm32f4xx.c.s
 .PHONY : Core/Src/system_stm32f4xx.c.s
+
+Core/Src/tim.obj: Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.obj
+
+# target to build an object file
+Core/Src/tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.c.obj
+
+Core/Src/tim.i: Core/Src/tim.c.i
+.PHONY : Core/Src/tim.i
+
+# target to preprocess a source file
+Core/Src/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/tim.c.i
+.PHONY : Core/Src/tim.c.i
+
+Core/Src/tim.s: Core/Src/tim.c.s
+.PHONY : Core/Src/tim.s
+
+# target to generate assembly for a file
+Core/Src/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\can_learning.elf.dir\build.make CMakeFiles/can_learning.elf.dir/Core/Src/tim.c.s
+.PHONY : Core/Src/tim.c.s
 
 Core/Startup/startup_stm32f427iihx.obj: Core/Startup/startup_stm32f427iihx.s.obj
 .PHONY : Core/Startup/startup_stm32f427iihx.obj
@@ -757,6 +829,12 @@ help:
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
+	@echo ... Core/Src/motor.obj
+	@echo ... Core/Src/motor.i
+	@echo ... Core/Src/motor.s
+	@echo ... Core/Src/pid.obj
+	@echo ... Core/Src/pid.i
+	@echo ... Core/Src/pid.s
 	@echo ... Core/Src/stm32f4xx_hal_msp.obj
 	@echo ... Core/Src/stm32f4xx_hal_msp.i
 	@echo ... Core/Src/stm32f4xx_hal_msp.s
@@ -772,6 +850,9 @@ help:
 	@echo ... Core/Src/system_stm32f4xx.obj
 	@echo ... Core/Src/system_stm32f4xx.i
 	@echo ... Core/Src/system_stm32f4xx.s
+	@echo ... Core/Src/tim.obj
+	@echo ... Core/Src/tim.i
+	@echo ... Core/Src/tim.s
 	@echo ... Core/Startup/startup_stm32f427iihx.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.i

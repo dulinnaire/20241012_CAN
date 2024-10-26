@@ -7,6 +7,8 @@
 "can_learning\tim.o"
 "can_learning\stm32f4xx_it.o"
 "can_learning\stm32f4xx_hal_msp.o"
+"can_learning\pid.o"
+"can_learning\motor.o"
 "can_learning\stm32f4xx_hal_can.o"
 "can_learning\stm32f4xx_hal_rcc.o"
 "can_learning\stm32f4xx_hal_rcc_ex.o"

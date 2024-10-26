@@ -56,7 +56,9 @@ add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F427xx)
 file(GLOB_RECURSE SOURCES "Core/*.*" "Drivers/*.*")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F427IIHX_FLASH.ld
-        Core/Src/callback.cpp)
+        Core/Src/callback.cpp
+        Core/Inc/motor.h
+        Core/Src/motor.cpp)
 
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)
 add_link_options(-mcpu=cortex-m4 -mthumb -mthumb-interwork)

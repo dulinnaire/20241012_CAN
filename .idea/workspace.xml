@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="can_learning" targetName="can_learning.elf" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug-MinGW-STM32" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="MinGW-STM32" GENERATION_OPTIONS="-G &quot;MinGW Makefiles&quot;" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4445c116-89fa-4e1e-bc84-d8de340cfd81" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/callback.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/callback.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvguix.81301" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvguix.81301" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvoptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvprojx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvprojx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.axf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.lnp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.lnp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning_can_learning.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning_can_learning.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/main.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/main.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_can.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_can.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_cortex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_cortex.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma_ex.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_exti.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_exti.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ex.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ramfunc.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ramfunc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_gpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_gpio.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr_ex.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc_ex.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim_ex.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/system_stm32f4xx.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/system_stm32f4xx.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/codemodel-v2-379073f947e59e88dc63.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/index-2024-10-12T07-23-03-0082.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/target-can_learning.elf-Debug-a5c78a99d70d9802553d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/clion-Debug-MinGW-STM32-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/clion-Debug-MinGW-STM32-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/Makefile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-MinGW-STM32" />
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ny8fJNDojBUVNsaiLYTZexR37P" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.advertisement.text.overridden": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "2006",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CPPToolchains",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="OpenOCD Download &amp; Run.can_learning.elf">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="can_learning.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="can_learning" TARGET_NAME="can_learning.elf" CONFIG_NAME="Debug-MinGW-STM32" RUN_TARGET_PROJECT_NAME="can_learning" RUN_TARGET_NAME="can_learning.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="can_learning.elf" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="can_learning" TARGET_NAME="can_learning.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="can_learning" RUN_TARGET_NAME="can_learning.elf">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="E:\RM\STlink.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
+        <debugger kind="GDB" isBundled="true" />
+      </openocd>
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.can_learning.elf" />
+      <item itemvalue="OpenOCD Download &amp; Run.can_learning.elf" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4445c116-89fa-4e1e-bc84-d8de340cfd81" name="Changes" comment="" />
+      <created>1729933571605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729933571605</updated>
+      <workItem from="1729933573549" duration="477000" />
+      <workItem from="1729934059051" duration="580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
