@@ -23,15 +23,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4445c116-89fa-4e1e-bc84-d8de340cfd81" name="Changes" comment="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中">
+    <list default="true" id="4445c116-89fa-4e1e-bc84-d8de340cfd81" name="Changes" comment="串级pid控制2006电机角度">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/motor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/pid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/pid.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/callback.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/callback.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/motor.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/pid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/pid.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvguix.81301" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvguix.81301" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvoptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.crf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.axf" afterDir="false" />
@@ -118,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729933571605</updated>
       <workItem from="1729933573549" duration="477000" />
-      <workItem from="1729934059051" duration="5072000" />
+      <workItem from="1729934059051" duration="7611000" />
     </task>
     <task id="LOCAL-00001" summary="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中">
       <option name="closed" value="true" />
@@ -128,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729935076090</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="串级pid控制2006电机角度">
+      <option name="closed" value="true" />
+      <created>1729941345441</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729941345441</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +152,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中" />
-    <option name="LAST_COMMIT_MESSAGE" value="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中" />
+    <MESSAGE value="串级pid控制2006电机角度" />
+    <option name="LAST_COMMIT_MESSAGE" value="串级pid控制2006电机角度" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

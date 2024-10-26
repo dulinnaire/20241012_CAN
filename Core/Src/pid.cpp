@@ -67,12 +67,26 @@ float PID::calc(float ref, float fdb) {
     return in_range(output_, -out_max_, out_max_);
 }
 
-CascadePID::CascadePID() {
-    inner_pid_ = PID(0, 0, 0, 0, 0);
-    outer_pid_ = PID(0, 0, 0, 0, 0);
+float AnglePID::calc(float ref, float fdb) {
+    if (ref - fdb < -180) {
+        fdb -= 360;
+    } else if (ref - fdb > 180) {
+        fdb += 360;
+    }
+    return PID::calc(ref, fdb);
 }
 
-CascadePID::CascadePID(PID inner_pid, PID outer_pid) {
+AnglePID::AnglePID() {}
+
+AnglePID::AnglePID(float kp, float ki, float kd, float out_max, float i_max):
+    PID(kp, ki, kd, out_max, i_max) {}
+
+CascadePID::CascadePID() {
+    inner_pid_ = PID(0, 0, 0, 0, 0);
+    outer_pid_ = AnglePID(0, 0, 0, 0, 0);
+}
+
+CascadePID::CascadePID(PID inner_pid, AnglePID outer_pid) {
     inner_pid_ = inner_pid;
     outer_pid_ = outer_pid;
 }

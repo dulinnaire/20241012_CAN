@@ -7,8 +7,8 @@
 uint8_t can_rx_buff[8];
 CAN_RxHeaderTypeDef can_rx_header;
 
-PID motor2006_speed_pid(25, 1.2, 2, 2500, 1000);
-CascadePID motor2006_angle_pid(motor2006_speed_pid, PID(5, 0, 0, 100, 100));
+PID motor2006_speed_pid(26, 0, 0, 2500, 1000);
+CascadePID motor2006_angle_pid(motor2006_speed_pid, AnglePID(2.5, 0.11, 0, 100, 100));
 Motor motor2006(motor2006_speed_pid, motor2006_angle_pid);
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
