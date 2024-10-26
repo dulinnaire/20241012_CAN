@@ -23,4 +23,15 @@ private:
     float output_;
 };
 
+class CascadePID {
+public:
+    CascadePID();
+    CascadePID(PID inner_pid, PID outer_pid);
+    float calc(float outer_ref, float outer_fdb, float inner_fdb);
+
+private:
+    PID inner_pid_;
+    PID outer_pid_;
+};
+
 #endif //PID_H

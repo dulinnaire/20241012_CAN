@@ -12,16 +12,20 @@
 class Motor {
 public:
     Motor();
-    Motor(PID pid);
+    Motor(PID speed_pid, CascadePID angle_pid);
 
     void data_process(uint8_t data[8]);
 
-    void set_speed(uint16_t rpm);
+    void set_speed(uint16_t spd);
+
+    void set_angle(float angle);
 
 private:
     float linear_mapping(int in, int in_min, int in_max, float out_min, float out_max);
 
-    PID motor_pid;
+    PID motor_speed_pid;
+
+    CascadePID motor_angle_pid;
 
     float ratio; // 电机减速比
 

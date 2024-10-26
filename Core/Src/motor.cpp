@@ -6,7 +6,8 @@
 Motor::Motor() {
     ratio = 3591 / 187; // 电机减速比
 
-    motor_pid = PID(0, 0, 0, 0, 0);
+    motor_speed_pid = PID();
+    motor_angle_pid = CascadePID();
 
     ecd_angle = 0; // 当前电机编码器角度 range:[0,8191]
     last_ecd_angle = 0; // 上次电机编码器角度 range:[0,8191]
@@ -19,10 +20,11 @@ Motor::Motor() {
     temp = 0; // °C 反馈电机温度
 }
 
-Motor::Motor(PID pid) {
+Motor::Motor(PID speed_pid, CascadePID angle_pid) {
     ratio = 3591 / 187; // 电机减速比
 
-    motor_pid = pid;
+    motor_speed_pid = speed_pid;
+    motor_angle_pid = angle_pid;
 
     ecd_angle = 0; // 当前电机编码器角度 range:[0,8191]
     last_ecd_angle = 0; // 上次电机编码器角度 range:[0,8191]
@@ -58,14 +60,29 @@ void Motor::data_process(uint8_t data[8]) {
 }
 
 extern CAN_TxHeaderTypeDef can_tx_header;
+
 void Motor::set_speed(uint16_t spd) { // 单位 rpm
     uint32_t tx_mailbox;
     uint8_t can_tx_data[8] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
-    uint16_t ctrl = 0;
+    int16_t ctrl = 0;
 
-    ctrl = motor_pid.calc(spd, rotate_speed);
+    ctrl = motor_speed_pid.calc(spd, rotate_speed);
 
     can_tx_data[0] = ctrl >> 8;
     can_tx_data[1] = ctrl & 0xFF;
     HAL_CAN_AddTxMessage(&hcan1, &can_tx_header, can_tx_data, &tx_mailbox);
 }
+
+int16_t tmp = 0;
+void Motor::set_angle(float angle) {
+    uint32_t tx_mailbox;
+    uint8_t can_tx_data[8] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+    int16_t ctrl = 0;
+    
+    ctrl = motor_angle_pid.calc(angle, ecd_angle, rotate_speed);
+    tmp = ctrl;
+    can_tx_data[0] = ctrl >> 8;
+    can_tx_data[1] = ctrl & 0xFF;
+    HAL_CAN_AddTxMessage(&hcan1, &can_tx_header, can_tx_data, &tx_mailbox);
+}
+

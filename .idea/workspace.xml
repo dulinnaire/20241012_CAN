@@ -23,68 +23,27 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4445c116-89fa-4e1e-bc84-d8de340cfd81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+    <list default="true" id="4445c116-89fa-4e1e-bc84-d8de340cfd81" name="Changes" comment="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/motor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/pid.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/pid.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/callback.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/callback.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/motor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/motor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/pid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/pid.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvguix.81301" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvguix.81301" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvoptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning.uvprojx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning.uvprojx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.crf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.d" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/callback.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can.crf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.axf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.axf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.build_log.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.lnp" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.lnp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning_can_learning.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/can_learning_can_learning.dep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.crf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/gpio.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/main.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/main.crf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/main.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_can.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_can.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_cortex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_cortex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_dma_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_exti.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_exti.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ramfunc.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_flash_ramfunc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_gpio.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_gpio.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.crf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_msp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_pwr_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_rcc_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim_ex.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_hal_tim_ex.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.crf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/stm32f4xx_it.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/system_stm32f4xx.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/system_stm32f4xx.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.crf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/tim.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/codemodel-v2-379073f947e59e88dc63.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/index-2024-10-12T07-23-03-0082.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/target-can_learning.elf-Debug-a5c78a99d70d9802553d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/can_learning.elf.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/clion-Debug-MinGW-STM32-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/clion-Debug-MinGW-STM32-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/motor.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/motor.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/motor.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/motor.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/pid.crf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/pid.crf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/can_learning/pid.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/can_learning/pid.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,12 +118,36 @@
       <option name="presentableId" value="Default" />
       <updated>1729933571605</updated>
       <workItem from="1729933573549" duration="477000" />
-      <workItem from="1729934059051" duration="580000" />
+      <workItem from="1729934059051" duration="5072000" />
     </task>
+    <task id="LOCAL-00001" summary="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中">
+      <option name="closed" value="true" />
+      <created>1729935076090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729935076090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中" />
+    <option name="LAST_COMMIT_MESSAGE" value="pid控制2006电机转速&#10;把之前电机相关的代码封装为motor类&#10;把pid内置到motor类中" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

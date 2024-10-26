@@ -7,8 +7,9 @@
 uint8_t can_rx_buff[8];
 CAN_RxHeaderTypeDef can_rx_header;
 
-PID motor2006_pid(20, 2, 0.5, 2500, 1000);
-Motor motor2006(motor2006_pid);
+PID motor2006_speed_pid(25, 1.2, 2, 2500, 1000);
+CascadePID motor2006_angle_pid(motor2006_speed_pid, PID(5, 0, 0, 100, 100));
+Motor motor2006(motor2006_speed_pid, motor2006_angle_pid);
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
     if (hcan == &hcan1) {
@@ -20,10 +21,12 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan) {
 }
 
 uint16_t ref = 150;
+float angle = 90;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim) {
     if (htim == &htim1) {
-        motor2006.set_speed(ref);
+        // motor2006.set_speed(ref);
+        motor2006.set_angle(angle);
     }
 }
 

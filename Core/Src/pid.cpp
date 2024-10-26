@@ -66,3 +66,18 @@ float PID::calc(float ref, float fdb) {
     // limit output
     return in_range(output_, -out_max_, out_max_);
 }
+
+CascadePID::CascadePID() {
+    inner_pid_ = PID(0, 0, 0, 0, 0);
+    outer_pid_ = PID(0, 0, 0, 0, 0);
+}
+
+CascadePID::CascadePID(PID inner_pid, PID outer_pid) {
+    inner_pid_ = inner_pid;
+    outer_pid_ = outer_pid;
+}
+
+float CascadePID::calc(float outer_ref, float outer_fdb, float inner_fdb) {
+    float inner_ref = outer_pid_.calc(outer_ref, outer_fdb);
+    return inner_pid_.calc(inner_ref, inner_fdb);
+}
